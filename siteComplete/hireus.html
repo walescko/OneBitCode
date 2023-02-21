@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIRE US - SPACEFAKEX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="spaceFakex.html"><img src="logoSpaceX.png" alt="" /></a>
+        <a href="spaceships.html">The Spaceships</a>
+        <a href="spaceFakex.html">SpaceFakex</a>
+      </nav>
+    </header>
+    <hr />
+    <h3>Hire Us</h3>
+    <p>
+      Leave a message to request on of our sercies and we will go back to you as
+      soon as possible.
+    </p>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /> -
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="emai" />
+      </div>
+      <br />
+      <div>
+        <label for="spaceship">Spaceship:</label>
+        <select id="spaceship" name="spaceship">
+          <option value="Space 9">Space 9</option>
+          <option value="Space Heavy">Space Heavy</option>
+        </select>
+        |
+        <label for="service">Service: </label>
+        <input type="search" name="service" id="service" list="services" />
+        <datalist id="services">
+          <option value="1 Lorota 1"></option>
+          <option value="2 Lorota 2"></option>
+          <option value="3 Lorota 3"></option>
+          <option value="4 Lorota 4"></option>
+        </datalist>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Send message" />
+      </div>
+    </form>
+  </body>
+</html>
