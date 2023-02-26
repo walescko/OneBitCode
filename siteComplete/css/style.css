@@ -1,0 +1,17 @@
+h1 {
+  color: #aaffbe;
+}
+h4,h5 {color: #0ca76b}
+li {
+  color: #0ca76b;
+}
+body{
+  background-image: url("https://wallpapers.com/images/hd4/four-moons-of-jupiter-ajhco6let64bvyg6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Nimbus Sans";
+}
+
+.galilean{
+  color: aqua;
+}
