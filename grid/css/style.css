@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: darkgray;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    gap: 5px;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-auto-rows: minmax(210px, 100%);
+
+
+}
+.item{
+
+    border: 2px solid black;
+    background-color: #aaaa5f;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
