@@ -172,3 +172,13 @@ main{
 .subHover:hover{
     border-color: #fff0f0;
 }
+.footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+.buttonFooter{
+    text-transform: uppercase;
+}
