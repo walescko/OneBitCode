@@ -181,4 +181,5 @@ main{
 }
 .buttonFooter{
     text-transform: uppercase;
+    text-decoration: none;
 }
