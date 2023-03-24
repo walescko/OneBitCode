@@ -3,10 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
-/*.container{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "input-operators output-answers ";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+.input-operators{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /*grid-area: input-operator;*/
+}
+.output-answers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /*grid-area: output-answers;*/
+    background-color: #aaaa5f;
+}
+
 body{
     text-align: center;
 }

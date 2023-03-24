@@ -5,28 +5,28 @@ function somar(){
     let numero1 = Number(inNumero1.value);
     let numero2 = Number(inNumero2.value);
     let soma = numero1 + numero2;
-    outResposta.textContent = numero1 + " + " + numero2 + " = " + soma;
+    outResposta.textContent = "\n" + numero1 + " + " + numero2 + " = " + soma;
 }
 function subtrair(){
     let numero1 = Number(inNumero1.value);
     let numero2 = Number(inNumero2.value);
     let resto = numero1 - numero2;
-    outResposta.textContent = numero1 + " - " + numero2 + " = " + resto;
+    outResposta.textContent = "\n" + numero1 + " - " + numero2 + " = " + resto;
 }
 function multiplicar(){
     let numero1 = Number(inNumero1.value);
     let numero2 = Number(inNumero2.value);
     let produto = numero1 * numero2;
-    outResposta.textContent = numero1 + " * " + numero2 + " = " + produto;
+    outResposta.textContent ="\n"+ numero1 + " * " + numero2 + " = " + produto;
 }
 function dividir(){
     let numero1 = Number(inNumero1.value);
     let numero2 = Number(inNumero2.value);
     if (numero2 == 0){
-        outResposta.textContent = "Não é possível dividir por zero!!!";
+        outResposta.textContent = "\nNão é possível dividir por zero!!!";
     } else {
     let quociente = numero1 / numero2;
-    outResposta.textContent = numero1 + " / " + numero2 + " = " + quociente;
+    outResposta.textContent ="\n"+ numero1 + " / " + numero2 + " = " + quociente;
     }
 }
 let btSomar = document.getElementById("btSomar");

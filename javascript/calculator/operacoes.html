@@ -27,20 +27,27 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Operações Básicas</h1>
-        <h3>Primeira valor: <input type="text" class="btn-outline-primary btn"id="inNumero1"></h3>
-        <h3>Segundo valor: <input type="text" class="btn-outline-primary btn" id="inNumero2"></h3>
+    <main class ="container">
+        <div class="grid-main">
+            <div class="input-operators">
+                <h1>Operações Básicas</h1>
+                <h3>Primeira valor: <input type="text" class="btn-outline-primary btn"id="inNumero1"></h3>
+                <h3>Segundo valor: <input type="text" class="btn-outline-primary btn" id="inNumero2"></h3>
 
-        <h3>
-            <input type="button" value="+" class="btn-primary btn" id="btSomar">
-            <input type="button" value="-" class="btn-primary btn" id="btSubtrair">
-            <input type="button" value="*" class="btn-primary btn" id="btMultiplicar">
-            <input type="button" value="/" class="btn-primary btn" id="btDividir">
-            <input type="button" value="Limpar" class="btn-danger btn" id="btClear">
-        </h3>
+                <h3>
+                    <input type="button" value="+" class="btn-primary btn" id="btSomar">
+                    <input type="button" value="-" class="btn-primary btn" id="btSubtrair">
+                    <input type="button" value="*" class="btn-primary btn" id="btMultiplicar">
+                    <input type="button" value="/" class="btn-primary btn" id="btDividir">
+                    <input type="button" value="Limpar" class="btn-danger btn" id="btClear">
+                </h3>
+            </div>
+            <div class="output-answers">
+                    <h3>Resultado:</h3>
 
-        <h3 id="outResposta"></h3>
+                    <h4 id="outResposta"></h4>
+            </div>
+        </div>
         <script src="js/clear.js"></script>
         <script src="js/operacoesBasicas.js"></script>
 
