@@ -4,7 +4,6 @@ let inCarName2 = document.getElementById("inCarName2");
 let inCarSpeed2 = document.getElementById("inCarSpeed2");
 
 function speed(){
-    alert("Helo World");
     const carName1 = inCarName1.value;
     const carName2 = inCarName2.value;
     const carSpeed1 = Number(inCarSpeed1.value);
@@ -15,10 +14,10 @@ function speed(){
         console.log("Os carros tem a mesma velocidade");
     }
     if (carSpeed2 < carSpeed1){
-        console.log("O carro 1 " + carName1 + " é o mais rápido.");
+        console.log("O carro " + carName1 + " é o mais rápido.");
     }
     if (carSpeed2 > carSpeed1){
-        console.log("O carro 2 " + carName2 + " é o ais rápido.");
+        console.log("O carro " + carName2 + " é o mais rápido.");
     }
 
 }
