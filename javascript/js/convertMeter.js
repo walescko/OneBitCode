@@ -1,5 +1,6 @@
 const inMeter = document.getElementById("inMeter")
 let choice = ""
+
 function milimeter(){
     choice = "1"
     converter()
@@ -26,29 +27,41 @@ function kilometer(){
 }
 function converter(){
     const meterUnit = Number(inMeter.value)
-     switch (choice){
+    if (meterUnit <= 0 || meterUnit == "" || isNaN(meterUnit)) {
+        converterMeter.textContent = "Valor Inválido! Digitar valor maior que zero!"
+        inModelo.focus();
+        return;
+    }
+
+    switch (choice) {
         case "1":
-            console.log(meterUnit*1000 + " mm")
+            converterMeter.textContent = meterUnit + " m = " + meterUnit * 1000 + " mm"
             break
         case "2":
-            console.log(meterUnit*100 + " cm")
+            converterMeter.textContent = meterUnit + " m = " + meterUnit * 100 + " cm"
             break
         case "3":
-            console.log(meterUnit*10 + "dm")
+            converterMeter.textContent = meterUnit + " m = " + meterUnit * 10 + "dm"
             break
         case "4":
-            console.log(meterUnit/10 + "dam")
+            converterMeter.textContent = meterUnit + " m = " + meterUnit / 10 + "dam"
             break
         case "5":
-            console.log(meterUnit/100 + "hm")
+            converterMeter.textContent = meterUnit + " m = " + meterUnit / 100 + "hm"
             break
         case "6":
-             console.log(meterUnit/1000 + "km")
-             break
+            converterMeter.textContent = meterUnit + " m = " + meterUnit / 1000 + "km"
+            break
         default:
-            console.log(kilometerUnit + "km")
-    }
+            converterMeter.textContent = "Error"
+        }
+
+
 }
+//
+// function outputConverter(){
+//     outputConverter.textContent = converterMeter
+// }
 let btMilimeter = document.getElementById("btMilimeter")
 let btCentimeter = document.getElementById("btCentimeter")
 let btDecimeter = document.getElementById("btDecimeter")

@@ -9,26 +9,34 @@
     <title>switch</title>
 </head>
 <body>
-<h1>Switch</h1>
 <main class="container">
   <div class="grid-left">
     <h1 class="title-left">Switch</h1>
-    <p class="list-left">
+    <p class="">
       Digite o valor do comprimento em metros:
       <input type="text" id="inMeter" class="input-data">
     </p>
 
-    <p class="list-left">Escolha a conversão:</p>
-    <p><button type="button" value="submit" id="inMilimeter" class="button">milimetro (mm)</button></p>
-    <p><button type="button" value="submit" id="inCentimeter" class="button">centrimetro (cm)</button></p>
-    <p><button type="button" value="submit" id="inDecimeter"class="button">decimetro (dm)</button></p>
-    <p><button type="button" value="submit" id="inDecameter" class="button">decâmetro (dam)</button></p>
-    <p><button type="button" value="submit" id="inHectometer" class="button">hectômetro (hm)</button></p>
-    <p><button type="button" value="submit" id="inKilometer" class="button">quilometro (km)</button></p>
+    <p class="">Escolha a conversão:</p>
+    <p>
+      <button type="button" value="submit" id="btMilimeter" class="button">milimetro (mm)</button>
+      <button type="button" value="submit" id="btCentimeter" class="button">centrimetro (cm)</button>
+    </p>
+    <p>
+      <button type="button" value="submit" id="btDecimeter"class="button">decimetro (dm)</button>
+      <button type="button" value="submit" id="btDecameter" class="button">decâmetro (dam)</button>
+    </p>
+    <p>
+      <button type="button" value="submit" id="btHectometer" class="button">hectômetro (hm)</button>
+      <button type="button" value="submit" id="btKilometer" class="button">quilometro (km)</button>
+    </p>
   </div>
   <div class="grid-center">
     <div class="grid-output">
-      <div id="convert-meter"></div>
+      <h2 class="title-left">Conversão</h2>
+      <div class="">
+        <h3 class="list-left" id="converterMeter"></h3>
+      </div>
     </div>
   </div>
 <script src="js/convertMeter.js"></script>
