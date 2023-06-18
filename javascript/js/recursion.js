@@ -8,12 +8,15 @@ function division(num){
 }
 
 // division(1024)
-function double(num){
-    console.log(num)
-    double(num*2)
+function double(num, i) {
+  console.log(num);
+  if (i === 1) {
+    return num;
+  } else {
+    return double(num * 2, i - 1);
+  }
 }
-
-double(1)
+double(2, 10);
 function click(){
     console.log("Não faz nada ao clicar no botão!")
     alert("Você apenas clicou no botão que não faz nada!")
