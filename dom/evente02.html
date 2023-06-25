@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>HMTL EVENTS</title>
+</head>
+<body>
+<main class="container">
+    <section class="grid-left">
+
+        <h3 class="title-left">Eventos no HTML</h3>
+        <p>É uma forma dinâmica de executar um código javascript sem travamento do HTML. OS eventos permitem a execução do JS, mas não imediatamente, somente quando for chamado.</p>
+        <p>Os eventos são ativados através de ações específicas. Veja exemplos abaixo:</p>
+        <div>
+            <label for="onMouseEnter">Entrada do Mouse:</label>
+            <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()">
+        </div>
+        <br>
+        <div>
+            <label for="onChange">Mudança de Valor:</label>
+            <input type="text" id="onChange" onchange="onChange()">
+        </div>
+        <br>
+        <div>
+            <label for="onFocus">Entrada de Foco:</label>
+            <input type="text" id="onFocus" onfocus="onFocus()">
+        </div>
+        <br>
+        <div>
+            <label for="onBlur">Saída de Foco:</label>
+            <input type="text" id="onBlur" onblur="onBlur()">
+        </div>
+        <br>
+        <button onclick="onClick()">
+            Clique-me!
+        </button>
+
+        <a><button class="btn btn-primary" id="btClick" onclick="">isto é apenas um botão</button></a>
+
+    </section>
+    <section class="grid-center">
+        <p>Coluna do centro</p>
+        <script src="js/events01.js"></script>
+    </section>
+</main>
+</body>
+</html>
