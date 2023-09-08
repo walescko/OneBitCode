@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssootstrap.css">
+    <link href="csstyle.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,36 +20,38 @@
         <h3 class="title-left">Eventos no HTML</h3>
         <p>É uma forma dinâmica de executar um código javascript sem travamento do HTML. OS eventos permitem a execução do JS, mas não imediatamente, somente quando for chamado.</p>
         <p>Os eventos são ativados através de ações específicas. Veja exemplos abaixo:</p>
+
         <div>
             <label for="onMouseEnter">Entrada do Mouse:</label>
-            <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()">
+            <input type="text" id="onMouseEnter" onmouseenter="console.log('Entrada do Mouse')">
         </div>
         <br>
         <div>
             <label for="onChange">Mudança de Valor:</label>
-            <input type="text" id="onChange" onchange="onChange()">
+            <input type="text" id="onChange" onchange="console.log('Mudança no valor')">
         </div>
         <br>
         <div>
             <label for="onFocus">Entrada de Foco:</label>
-            <input type="text" id="onFocus" onfocus="onFocus()">
+            <input type="text" id="onFocus" onfocus="console.log('foco no elemento')">
         </div>
         <br>
         <div>
             <label for="onBlur">Saída de Foco:</label>
-            <input type="text" id="onBlur" onblur="onBlur()">
+            <input type="text" id="onBlur" onblur="console.log('desfocando o elemento')">
         </div>
         <br>
-        <button onclick="onClick()">
+        <button onclick="console.log('click')">
             Clique-me!
         </button>
+
+
 
         <a><button class="btn btn-primary" id="btClick" onclick="">isto é apenas um botão</button></a>
 
     </section>
     <section class="grid-center">
-        <p>Coluna do centro</p>
-        <script src="js/events01.js"></script>
+        <p>Texto do centro</p>
     </section>
 </main>
 </body>
