@@ -1,3 +1,5 @@
+export const name = "Moisés do Egito"
+
 export function label(attributes){
     const element = document.createElement('label')
     Object.assign(element, attributes)
@@ -10,3 +12,7 @@ export function input(attributes){
     return element
 }
 
+export function br(){
+    const element = document.createElement('br')
+    return element
+}
