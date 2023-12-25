@@ -1,6 +1,6 @@
 class User{
-    constructor(name, email, password) {
-        this.name = name
+    constructor(fullname, email, password) {
+        this.fullname = fullname
         this.email = email
         this.password = password
     }
@@ -10,7 +10,6 @@ class User{
         } else {
             console.log("Acesso negado")
         }
-
     }
 }
 
