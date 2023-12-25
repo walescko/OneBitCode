@@ -16,6 +16,7 @@ class User{
 
 const user01 = new User("Walescko", "walescko@walescko.com", "senhaehsenha")
 console.log(user01)
+
 console.log("Teste de Login com parametros corretos")
 user01.login("walescko@walescko.com", "senhaehsenha")
 console.log("Teste de Login com parametros incorretos")
