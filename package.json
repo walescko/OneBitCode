@@ -6,6 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Walescko",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walescko/OneBitCode.git"
+  },
+  "keywords": [
+    "full",
+    "stack",
+    "javascritp",
+    "html",
+    "css",
+    "developer"
+  ],
+  "bugs": {
+    "url": "https://github.com/walescko/OneBitCode/issues"
+  },
+  "homepage": "https://github.com/walescko/OneBitCode#readme"
 }
